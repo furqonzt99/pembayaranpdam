@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f2df6a32-6d4d-4026-80ad-a071b10e05a2">
+	<property name="ireport.zoom" value="1.0514816984441773"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="15"/>
+	<queryString>
+		<![CDATA[SELECT
+     pelanggan.`no_pel` AS pelanggan_no_pel,
+     pelanggan.`nama_pel` AS pelanggan_nama_pel,
+     pelanggan.`jk` AS pelanggan_jk,
+     pelanggan.`tempat_lahir` AS pelanggan_tempat_lahir,
+     pelanggan.`tgl_lahir` AS pelanggan_tgl_lahir,
+     pelanggan.`alamat` AS pelanggan_alamat,
+     pelanggan.`golongan` AS pelanggan_golongan,
+     pelanggan.`no_telp` AS pelanggan_no_telp,
+     pelanggan.`stand_update` AS pelanggan_stand_update,
+     pelanggan.`pembayaran_terakhir` AS pelanggan_pembayaran_terakhir,
+     pelanggan.`update_terakhir` AS pelanggan_update_terakhir
+FROM
+     `pelanggan` pelanggan]]>
+	</queryString>
+	<field name="pelanggan_no_pel" class="java.lang.Long"/>
+	<field name="pelanggan_nama_pel" class="java.lang.String"/>
+	<field name="pelanggan_jk" class="java.lang.String"/>
+	<field name="pelanggan_tempat_lahir" class="java.lang.String"/>
+	<field name="pelanggan_tgl_lahir" class="java.sql.Date"/>
+	<field name="pelanggan_alamat" class="java.lang.String"/>
+	<field name="pelanggan_golongan" class="java.lang.String"/>
+	<field name="pelanggan_no_telp" class="java.lang.String"/>
+	<field name="pelanggan_stand_update" class="java.lang.Double"/>
+	<field name="pelanggan_pembayaran_terakhir" class="java.sql.Date"/>
+	<field name="pelanggan_update_terakhir" class="java.sql.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="29" width="555" height="20" uuid="ecf6180e-8d91-4575-869e-66592258e261"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN PELANGGAN]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="17" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="33" y="2" width="47" height="20" uuid="be79b481-b3d4-481d-a3dd-277df335ebbf"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[No Pel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="2" width="59" height="20" uuid="062cc70b-798f-4f55-9115-27950b4e661d"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="139" y="2" width="51" height="20" uuid="3a43ed69-d153-4388-8479-8ff7a3fd67b1"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[J.Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="2" width="66" height="20" uuid="2a703b1c-f528-4cff-b8c2-8c482f495c3b"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tempat Lahir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="256" y="2" width="59" height="20" uuid="03679957-3a01-431e-853b-7583dfe99af4"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tgl Lahir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="315" y="2" width="72" height="20" uuid="6cb5f604-b6d6-44f4-ac8e-04e3073ca957"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="387" y="2" width="54" height="20" uuid="e4d13898-23a6-4db4-82fc-59bf732e1436"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Golongan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="441" y="2" width="60" height="20" uuid="13742563-de53-4868-8cf3-585e229ea725"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[No Telp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="501" y="2" width="54" height="20" uuid="9e421e34-ee50-4c18-9275-a432e18016fe"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Akh. Byr]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="2" width="33" height="20" uuid="df2ac435-5200-4a54-8db9-5df711f177fb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="22" width="555" height="1" uuid="2b332bef-4e98-421f-88cd-efc337b9c4c4"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField pattern="000000">
+				<reportElement x="33" y="0" width="47" height="20" uuid="7c6af2bd-09bf-4668-8322-2e7adbf572ac"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pelanggan_no_pel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="0" width="51" height="20" uuid="dc64a468-8170-4ce4-b7e5-d63acf0209de"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pelanggan_jk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="0" width="66" height="20" uuid="c2d8522d-8a03-4fae-823e-8393d6451c37"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pelanggan_tempat_lahir}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="256" y="0" width="59" height="20" uuid="f3b0af69-fefb-4ee9-8039-f90afe80e4a1"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pelanggan_tgl_lahir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="315" y="0" width="72" height="20" uuid="907fabf7-634b-403f-acd8-03c3c1c5d87a"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pelanggan_alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="387" y="0" width="54" height="20" uuid="c68c864f-14fc-488a-8da2-05d90df12502"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pelanggan_golongan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="0" width="60" height="20" uuid="8a12394a-0823-4c95-a975-28067d096e87"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pelanggan_no_telp}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="501" y="0" width="54" height="20" uuid="30710fbc-63b4-491b-b190-4cfcafe1786f"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pelanggan_pembayaran_terakhir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="1" width="33" height="20" uuid="e96ef796-3ab2-4c5f-a2e3-a4a4c9de4b96"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="21" width="555" height="1" uuid="9780f725-37b1-414a-9bca-a898eefd5d95"/>
+			</line>
+			<textField>
+				<reportElement x="80" y="1" width="59" height="20" uuid="0d9d7f83-7098-4e78-a54a-338ddb522729"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pelanggan_nama_pel}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
